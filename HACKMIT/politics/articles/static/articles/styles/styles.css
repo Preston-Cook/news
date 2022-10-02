@@ -1,0 +1,33 @@
+body {
+    font-family: 'Libre Baskerville', serif;
+}
+
+main {
+    padding: 15px;
+}
+
+#nav {
+    background-color: #E3F2FD; 
+}
+
+#logo {
+    height: 40px;
+}
+
+.form-control {
+    font-family: "Helvetica Neue";
+}
+
+#login {
+    background-color: #198753;
+}
+
+#dropdown-item:hover, #dropdown-item:link, #dropdown-item:visited  {
+    text-decoration: none;
+    color: inherit;
+}
+
+.article-link.btn.btn-primary {
+    background-color: #198753;
+}
+

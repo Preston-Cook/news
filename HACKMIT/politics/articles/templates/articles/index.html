@@ -1,0 +1,36 @@
+{% extends "articles/layout.html" %}
+
+{% load static %}
+
+{% block title %} Notewordy: Home {% endblock %}
+
+{% block script %} <script type="text/javascript" src="{% static 'articles/js/index.js' %}"></script> {% endblock %}
+
+{% block main %}
+    <h1>Trending Headlines</h1>
+    <hr>
+    {% if logout %}
+        <div id="message">
+            <div class="alert alert-success" role="alert">Successfully Logged Out</div>
+        </div>
+    {% endif %}
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap">
+        {% for article in article_data %}
+        <div class="card" style="width: 24rem; margin: 20px;">
+            <img src="{{ article.2 }}" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">{{ article.0 }}</h5>
+                <p class="card-text">{{ article.3 }}</p>
+                <div>
+                    <a href="{{ article.1 }}" class="article-link btn btn-primary">View Source</a>
+                    <span class="publication-date">{{ article.4 }}</span>
+                </div>
+            </div>
+            {% if user.is_authenticated %}
+                <button class="save btn btn-primary">Save Article</button>
+            {% endif %}
+        </div>
+        <br>
+        {% endfor %}
+    </div>
+{% endblock %}

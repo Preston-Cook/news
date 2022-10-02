@@ -1,0 +1,32 @@
+{% extends "articles/layout.html" %}
+
+{% load static %}
+
+{% block title %} Notewordy: Log In {% endblock %}
+
+{% block script %} <script type="text/javascript" src="{% static 'articles/js/login.js' %}"></script> {% endblock %}
+
+{% block main %}
+    <h1>Login</h1>
+    <hr>
+    {% if message %}
+        <div class="alert alert-danger" role="alert">{{ message }}</div>
+    {% endif %}
+    <form action="{% url 'login' %}" method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Email Address">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password">
+          </div>
+          <input id="login" class="btn btn-primary"type="submit" value="Log In">
+    </form>
+    <br>
+    <p>Don't have an account?</p>
+    <a href="{% url 'register' %}">
+        <button id="login" class="btn btn-primary">Register</button>
+    </a>
+{% endblock %}
