@@ -1,2 +1,2 @@
 # news
-My Submission for HackMIT 2022
+My team's submission for HackMIT 2022
