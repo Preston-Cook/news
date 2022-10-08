@@ -10,7 +10,6 @@ from .utils import *
 import dateutil.parser
 from django.core.paginator import Paginator
 import json
-from django.db import IntegrityError
 from datetime import datetime
 
 # Create your views here.
