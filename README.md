@@ -1,4 +1,4 @@
-# CS50W Capstone: Newswordy
+# HackMIT 2022: Newswordy
 
 ## Introduction
 For my capstone project, I designed Newswordy, a web application that allows users to view trending headlines from roughly 150 news sources across the web. 
