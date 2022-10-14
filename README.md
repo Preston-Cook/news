@@ -1,7 +1,7 @@
 # HackMIT 2022: Newswordy
 
 ## Introduction
-For my capstone project, I designed Newswordy, a web application that allows users to view trending headlines from roughly 150 news sources across the web. 
+For our project, my team and I designed Newswordy, a web application that allows users to view trending headlines from roughly 150 news sources across the web. 
 
 In all, users can view trending headlines within their country, predetermined categories, or categories of their creation. 
 
@@ -32,9 +32,6 @@ The login and registration features were achieved with Django's built-in authent
 
 ### Account Page
 The account section of the web application allows users to view basic information tied to their account, such as their email, username, date joined, and other fields within the Django default User class. 
-
-## Additional Information
-I'd like to sincerely thank the CS50 team for helping me along with my programmign journey. Although I know I have much left to learn, programming has totally changed my life! I started programming last December during winter break through online courses. I'm now a teaching assistant for two programming courses at UT Austin, and I even traveled to MIT for their most-recent hackathon! Keep up the amazing work! :)
 
 ## Third-Party Libraries
 This makes use of the following third-party libraries:
