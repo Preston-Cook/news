@@ -1,4 +1,0 @@
-django
-newsapi-python
-python-dateutil
-requests
