@@ -1,0 +1,82 @@
+body {
+    font-family: 'Libre Baskerville', serif;
+}
+
+main {
+    padding: 15px;
+}
+
+#nav {
+    background-color: #E3F2FD; 
+}
+
+#logo {
+    height: 40px;
+}
+
+.form-control {
+    font-family: "Helvetica Neue";
+}
+
+#login {
+    background-color: #198753;
+}
+
+#dropdown-item:hover, #dropdown-item:link, #dropdown-item:visited  {
+    text-decoration: none;
+    color: inherit;
+}
+
+.article-link.btn.btn-primary {
+    background-color: #198753;
+}
+
+#search-bar, search-bar::placeholder {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-img-top:hover {
+    cursor: pointer;
+}
+
+.card {
+    border-radius: 24px;
+}
+
+.card-header:first-child {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+.card-body {
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    bottom: 15px;
+}
+
+.form-control {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.save.btn.btn-primary {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.category-link {
+    text-decoration: none;
+}
+
+.card-title {
+    font-weight: bold;
+}

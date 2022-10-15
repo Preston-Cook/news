@@ -1,0 +1,30 @@
+{% extends "articles/layout.html" %}
+
+{% load static %}
+
+{% block title %} Newswordy: My Account {% endblock %}
+
+{% block script %} <script type="text/javascript" src="{% static 'articles/js/account.js' %}"></script> {% endblock %}
+
+{% block main %}
+    <h1>My Account</h1>
+    <hr>
+    {% if postitive_msg %}
+      <div class="alert alert-success" role="alert">{{ postitive_msg }}</div>
+    {% elif error_msg %}
+      <div class="alert alert-danger" role="alert">{{ error_msg }}</div>
+    {% endif %}
+    <h3>Account Information</h3>
+    <div class="card">
+        <h5 class="card-header">{{ request.user }}'s Information</h5>
+        <div class="card-body">
+          <h5 class="card-title">Username</h5>
+          <p class="card-text">{{ request.user.username }}</p>
+          <h5 class="card-title">Email</h5>
+          <p class="card-text">{{ request.user.email }}</p>
+          <h5 class="card-title">Date Joined</h5>
+          <p class="card-text">{{ request.user.date_joined }}</p>
+        </div>
+      </div>
+      <br>
+{% endblock %}

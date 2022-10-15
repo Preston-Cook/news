@@ -1,0 +1,40 @@
+{% extends "articles/layout.html" %}
+
+{% load static %}
+
+{% block title %} Newswordy: Register {% endblock %}
+
+{% block script %} <script type="text/javascript" src="{% static 'articles/js/register.js' %}"></script> {% endblock %}
+
+{% block main %}
+    <h1>Register</h1>
+    <hr>
+    {% if message %}
+        <div class="alert alert-danger" role="alert">{{ message }}</div>
+    {% endif %}
+    <form action="{% url 'register' %}" method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Username</label>
+          <input type="text" class="form-control" name="username">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmation" name="confirmation">
+          </div>
+          <input id="login" class="btn btn-primary"type="submit" value="Register">
+    </form>
+    <br>
+    <p>Already Have an Account?</p>
+    <a href="{% url 'login' %}">
+        <button id="login" class="btn btn-primary">Log In</button>
+    </a>
+{% endblock %}
