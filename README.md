@@ -35,7 +35,7 @@ The account section of the web application allows users to view basic informatio
 
 
 ## Third-Party Libraries
-This makes use of the following third-party libraries:
+Newswordy makes use of the following third-party libraries:
 - django
 - newsapi-python
 - python-dateutil
