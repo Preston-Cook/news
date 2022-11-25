@@ -15,7 +15,7 @@ categories = [
 ]
 
 
-os.environ['API_KEY'] = '637968ded3e34da2a6045f333fd636c9'
+os.environ['API_KEY'] = '' # <-- Insert API Key here
 
 def get_trending(country):
 
