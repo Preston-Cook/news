@@ -24,7 +24,7 @@ def index(request):
 
     # Retrieve client IP, country, and trending articles in their country
     ip = get_client_ip(request)
-    country = get_country(ip).lower()
+    country = get_country(ip)
 
     # If user is connected to site on localhost, country is None
     if not country:
